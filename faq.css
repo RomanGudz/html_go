@@ -1,0 +1,30 @@
+.faq-item {
+  background-color: #fff;
+  color: #1c1a1a;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+}
+
+.faq-item:nth-child(2n) {
+  background-color: #440f51;
+}
+
+.faq-item:after {
+  content: "";
+  background-image: url("./img/open.svg");
+  display: inline-block;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.faq-item:nth-child(odd):after {
+  content: "";
+  background-image: url("./img/open-purple.svg");
+  display: inline-block;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
