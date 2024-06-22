@@ -1,0 +1,44 @@
+.contacts {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contact-title {
+  font-size: 40px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px 0 53px 0;
+}
+.contacts-list {
+  list-style: none;
+}
+
+.item-contact {
+  padding-left: 61px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.location {
+  background-image: url("./img/location.svg");
+  background-size: 35px 32px;
+  margin-bottom: 54px;
+}
+.phone {
+  background-image: url("./img/phone-call.svg");
+  margin-bottom: 10px;
+}
+.email {
+  background-image: url("./img/envelope.svg");
+}
+
+.address {
+  white-space: pre-line;
+}
+
+.link-contact {
+  text-decoration: none;
+  color: inherit;
+}

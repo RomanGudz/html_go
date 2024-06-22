@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 body {
@@ -9,6 +10,23 @@ body {
 
 cite {
   text-transform: uppercase;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+fieldset {
+  width: 600px;
+  padding: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+button {
+  margin-top: 5px;
 }
 
 .wrapper {
