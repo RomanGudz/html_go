@@ -1,11 +1,18 @@
 .banner {
-  background-image: url("./img/hero_image.png");
-  background-size: contain;
+  margin-bottom: 100px;
+}
+
+.banner:after {
+  content: "";
+  display: inline-block;
   width: 1180px;
   height: 823px;
+  background-image: url("./img/hero_image.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  margin-bottom: 100px;
+  position: relative;
+  top: -100px;
 }
 
 .banner_title-h2 {
