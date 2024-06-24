@@ -14,10 +14,18 @@
   list-style: none;
 }
 
+.contacts-social-list {
+  list-style: none;
+  display: flex;
+}
+
+.social-item {
+  margin-right: 26px;
+}
+
 .item-contact {
   padding-left: 61px;
   background-size: contain;
-  background-position: left;
   background-repeat: no-repeat;
 }
 

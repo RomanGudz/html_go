@@ -1,0 +1,43 @@
+.about {
+}
+
+.about-title_h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.cite-text {
+  font-size: 44px;
+  line-height: 114%;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.cite-text:after {
+  content: "\201D";
+  font-weight: 900;
+  color: #6c0287;
+}
+
+.cite-text:before {
+  content: "\201C";
+  font-weight: 900;
+  color: #6c0287;
+}
+.cite {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 140%;
+  white-space: pre-line;
+  margin-left: 30px;
+}
+
+.cite-img {
+  margin: 0 0 0 720px;
+}

@@ -16,6 +16,9 @@
 .item-link {
   text-decoration: none;
   color: inherit;
+  position: relative;
+  top: 275px;
+  white-space: pre-line;
 }
 
 .list-item {

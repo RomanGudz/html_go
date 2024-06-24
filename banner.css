@@ -5,7 +5,7 @@
 .banner:after {
   content: "";
   display: inline-block;
-  width: 1180px;
+  width: 1140px;
   height: 823px;
   background-image: url("./img/hero_image.png");
   background-size: contain;
