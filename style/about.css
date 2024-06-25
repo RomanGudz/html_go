@@ -31,7 +31,6 @@
   color: #6c0287;
 }
 .cite {
-  display: inline-block;
   font-size: 20px;
   line-height: 140%;
   white-space: pre-line;
@@ -39,5 +38,8 @@
 }
 
 .cite-img {
-  margin: 0 0 0 720px;
+  display: flex;
+  padding-top: 40px;
+  justify-content: flex-end;
+  margin: 0 0 0 500px;
 }

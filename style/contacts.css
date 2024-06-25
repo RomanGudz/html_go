@@ -17,6 +17,7 @@
 .contacts-social-list {
   list-style: none;
   display: flex;
+  padding-top: 39px;
 }
 
 .social-item {
@@ -30,16 +31,16 @@
 }
 
 .location {
-  background-image: url("./img/location.svg");
+  background-image: url("../img/location.svg");
   background-size: 35px 32px;
   margin-bottom: 54px;
 }
 .phone {
-  background-image: url("./img/phone-call.svg");
+  background-image: url("../img/phone-call.svg");
   margin-bottom: 10px;
 }
 .email {
-  background-image: url("./img/envelope.svg");
+  background-image: url("../img/envelope.svg");
 }
 
 .address {

@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
@@ -27,10 +27,4 @@ input {
 
 button {
   margin-top: 5px;
-}
-
-.wrapper {
-  width: 1200px;
-  padding: 30px;
-  margin: 0 auto;
-}
+} */

@@ -22,7 +22,7 @@
 }
 
 .list-item {
-  margin-bottom: 60px;
+  margin-top: 60px;
   background-size: auto;
   height: 710px;
   width: 1180px;
@@ -30,16 +30,16 @@
 }
 
 .bg-80s_vibe {
-  background-image: url("./img/80s_vibes.jpg");
+  background-image: url("../img/80s_vibes.jpg");
 }
 .bg-star_wars {
-  background-image: url("./img/star_wars.jpg");
+  background-image: url("../img/star_wars.jpg");
 }
 .bg-wild_west {
-  background-image: url("./img/wild_west.jpg");
+  background-image: url("../img/wild_west.jpg");
 }
 .bg-neon_style {
-  background-image: url("./img/neon_style.jpg");
+  background-image: url("../img/neon_style.jpg");
 }
 
 .item-link {

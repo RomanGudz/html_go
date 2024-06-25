@@ -25,7 +25,7 @@
 
 .faq-item:after {
   content: "";
-  background-image: url("./img/open.svg");
+  background-image: url("../img/open.svg");
   display: inline-block;
   background-size: contain;
   width: 46px;
@@ -34,7 +34,7 @@
 
 .faq-item:nth-child(odd):after {
   content: "";
-  background-image: url("./img/open-purple.svg");
+  background-image: url("../img/open-purple.svg");
   background-size: contain;
   width: 46px;
   height: 46px;

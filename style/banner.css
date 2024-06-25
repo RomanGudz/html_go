@@ -1,13 +1,9 @@
-.banner {
-  margin-bottom: 100px;
-}
-
 .banner:after {
   content: "";
   display: inline-block;
   width: 1140px;
   height: 823px;
-  background-image: url("./img/hero_image.png");
+  background-image: url("../img/hero_image.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
