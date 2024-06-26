@@ -1,27 +1,25 @@
-.banner:after {
+.banner_title-h3:after {
   content: "";
-  display: inline-block;
-  width: 1140px;
-  height: 823px;
+
+  width: 675px;
+  height: 762px;
   background-image: url("../img/hero_image.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
   position: relative;
-  top: -100px;
+  top: -90px;
 }
 
 .banner_title-h2 {
   font-weight: 900;
   font-size: 150px;
   text-align: left;
-  margin: 0;
   line-height: 100%;
   letter-spacing: -0.1em;
 }
 
 .banner_title-h3 {
   font-size: 28px;
-  margin: auto;
   padding: 0 0 0 100px;
+  display: flex;
 }

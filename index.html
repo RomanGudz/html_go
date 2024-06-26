@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
+  <header>
+    <div class="container">
       <a href="#">
         <img src="./img/logo.png" alt="Логотип компании">
       </a>
@@ -38,15 +38,19 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="banner">
+  <main>
+    <section class="banner">
+      <div class="container">
         <h2 class="banner_title-h2">GAME OVER</h2>
         <h3 class="banner_title-h3">Новый формат игр и отдыха</h3>
-      </section>
+      </div>
+    </section>
 
-      <section id="halls" class="halls">
+    <section id="halls" class="halls">
+      <div class="container">
         <h3 class="halls-title">Наши залы</h3>
         <ol class="halls-list">
           <li class="list-item bg-80s_vibe"><a href="vibes.html" class="item-link">80`s
@@ -58,110 +62,117 @@
           <li class="list-item bg-neon_style"><a href="neon.html" class="item-link">Neon
               style</a></li>
         </ol>
-      </section>
+      </div>
+    </section>
 
-      <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking">
-        <h3>Забронировать</h3>
-        <fieldset>
-          <legend>залы</legend>
-          <label>
-            <input type="radio" name="halls" value="80`sVibes">
-            80`s vibes</label>
-          <label>
-            <input type="radio" name="halls" value="StarWars">
-            Star wars</label>
-          <label>
-            <input type="radio" name="halls" value="WildWest">
-            Wild west
-          </label>
-          <label>
-            <input type="radio" name="halls" value="NeonStyle">
-            Neon style
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>собери набор развлечений</legend>
-
+    <section>
+      <div class="container">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking">
+          <h3>Забронировать</h3>
           <fieldset>
-            <legend>Приставка</legend>
+            <legend>залы</legend>
             <label>
-              <input type="radio" name="console" value="PlayStation">
-              PlayStation
-            </label>
+              <input type="radio" name="halls" value="80`sVibes">
+              80`s vibes</label>
             <label>
-              <input type="radio" name="console" value="SegaMegaDrive">
-              Sega Mega Drive
-            </label>
+              <input type="radio" name="halls" value="StarWars">
+              Star wars</label>
             <label>
-              <input type="radio" name="console" value="X-boxAboutS">
-              X-box about S
+              <input type="radio" name="halls" value="WildWest">
+              Wild west
             </label>
             <label>
-              <input type="radio" name="console" value="Dendy">
-              Dendy
-            </label>
-
-          </fieldset>
-
-          <fieldset>
-            <legend>Настольные игры</legend>
-            <label><input type="checkbox" name="boardGame" value="Jenga">
-              Jenga
-            </label>
-            <label><input type="checkbox" name="boardGame" value="Monopoly">
-              Monopoly
-            </label>
-            <label><input type="checkbox" name="boardGame" value="Манчкин">
-              Манчкин
-            </label>
-            <label><input type="checkbox" name="boardGame" value="Alias">
-              Alias
+              <input type="radio" name="halls" value="NeonStyle">
+              Neon style
             </label>
           </fieldset>
 
           <fieldset>
-            <legend>Дополнительно</legend>
-            <label><input type="checkbox" name="additionally" value="VR">
-              VR
-            </label>
-            <label><input type="checkbox" name="additionally" value="Karaoke">
-              Караоке
-            </label>
+            <legend>собери набор развлечений</legend>
+
+            <fieldset>
+              <legend>Приставка</legend>
+              <label>
+                <input type="radio" name="console" value="PlayStation">
+                PlayStation
+              </label>
+              <label>
+                <input type="radio" name="console" value="SegaMegaDrive">
+                Sega Mega Drive
+              </label>
+              <label>
+                <input type="radio" name="console" value="X-boxAboutS">
+                X-box about S
+              </label>
+              <label>
+                <input type="radio" name="console" value="Dendy">
+                Dendy
+              </label>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Настольные игры</legend>
+              <label><input type="checkbox" name="boardGame" value="Jenga">
+                Jenga
+              </label>
+              <label><input type="checkbox" name="boardGame" value="Monopoly">
+                Monopoly
+              </label>
+              <label><input type="checkbox" name="boardGame" value="Манчкин">
+                Манчкин
+              </label>
+              <label><input type="checkbox" name="boardGame" value="Alias">
+                Alias
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <label><input type="checkbox" name="additionally" value="VR">
+                VR
+              </label>
+              <label><input type="checkbox" name="additionally" value="Karaoke">
+                Караоке
+              </label>
+            </fieldset>
           </fieldset>
-        </fieldset>
 
-        <fieldset>
-          <legend>выбери дату и время</legend>
-          <label for="date">Дата*</label>
-          <input type="date" name="date" required>
+          <fieldset>
+            <legend>выбери дату и время</legend>
+            <label for="date">Дата*</label>
+            <input type="date" name="date" required>
 
-          <label for="time">Время*</label>
-          <input type="time" name="time" required>
-          <br>
-          <label for="people">Количество человек*</label>
-          <input type="number" name="people" required>
-          <br>
-          <label for="name">Имя*</label>
-          <input type="text" name="name" required>
+            <label for="time">Время*</label>
+            <input type="time" name="time" required>
+            <br>
+            <label for="people">Количество человек*</label>
+            <input type="number" name="people" required>
+            <br>
+            <label for="name">Имя*</label>
+            <input type="text" name="name" required>
 
-          <label for="lastName">Фамилия*</label>
-          <input type="text" name="lastName" required>
-          <br>
-          <label for="phabout">Номер телефона*</label>
-          <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
-          <br>
-          <label for="email">E-mail</label>
-          <input type="email" name="email">
+            <label for="lastName">Фамилия*</label>
+            <input type="text" name="lastName" required>
+            <br>
+            <label for="phabout">Номер телефона*</label>
+            <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email">
 
-          <br>
-          <input type="checkbox">Я страше 18 лет
-        </fieldset>
+            <br>
+            <input type="checkbox">Я страше 18 лет
+          </fieldset>
 
-        <button type="submit">Забронировать</button>
-      </form>
+          <button type="submit">Забронировать</button>
+        </form>
+      </div>
+    </section>
 
-      <section id="about" class="about">
+    <section id="about" class="about">
+      <div class="container">
+
         <h2 class="about-title_h2">О нас</h2>
         <h3>У нас есть все для классного отдыха с друзьями</h3>
         <figure>
@@ -183,16 +194,20 @@
           <img src="./img/sony.png" alt="PlayStation5">
           <figcaption> PlayStation5</figcaption>
         </figure>
-      </section>
+      </div>
+    </section>
 
-      <section class="about-text">
+    <section class="about-text">
+      <div class="container">
         <p>Для нащих гостей мы создали концептуально новое игровое пространство виртуальной реальности в
           центральной части города.</p>
         <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
           разработками со всего мира.</p>
-      </section>
+      </div>
+    </section>
 
-      <section>
+    <section>
+      <div class="container">
         <blockquote>
           <p class="cite-text"> GAME OVER-
             это место незабываемых впечатлений </p>
@@ -202,12 +217,14 @@
               создатель игровой
               територии GAME OVER</figcaption>
           </figure>
-
         </blockquote>
-      </section>
+      </div>
+    </section>
 
-      <section id="reviews">
-        <ul style="list-style: none;">
+    <section id="reviews">
+      <div class="container">
+
+        <ul>
           <li>
             <figure>
               <img src="#" alt="фото Макс Самойлов">
@@ -239,9 +256,11 @@
             </figure>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section>
+    <section>
+      <div class="container">
         <h2>Частые вопросы</h2>
 
         <ul class="faq-list">
@@ -251,14 +270,14 @@
           <li class="faq-item">Как получить VIP карту?</li>
           <li class="faq-item">Какая комната самая популярная?</li>
         </ul>
-      </section>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <section id="contacts" class="contacts">
+      <div class="container">
 
-    </main>
-
-    <footer>
-
-      <section id="contacts" class="contacts">
         <h3 class="contact-title">Контакты</h3>
 
         <ul class="contacts-list">
@@ -273,10 +292,6 @@
             <a href="mailto:GameOver@gmail.com" class="link-contact">GameOver@gmail.com</a>
           </li>
         </ul>
-
-
-
-
 
         <ul class="contacts-social-list">
           <li class="social-item">
@@ -313,28 +328,28 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <form action="https://jsonplaceholder.typicode.com/posts" widht="100" id="backCall" method="POST">
-        <fieldset>
-          <legend>Заказать звонок</legend>
-          <label for="name">Имя</label>
-          <input type="text" placeholder="Введите имя" name="name">
+    <form action="https://jsonplaceholder.typicode.com/posts" widht="100" id="backCall" method="POST">
+      <fieldset>
+        <legend>Заказать звонок</legend>
+        <label for="name">Имя</label>
+        <input type="text" placeholder="Введите имя" name="name">
 
-          <label for="lastName">Фамилия</label>
-          <input type="text" placeholder="Введите фамилию" name="lastName" required>
+        <label for="lastName">Фамилия</label>
+        <input type="text" placeholder="Введите фамилию" name="lastName" required>
 
-          <label for="phabout">Телефон</label>
-          <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
-          <br>
-          <label for="personalData">согласен на обработку персональгых данных</label>
-          <input type="checkbox" required name="personalData">
-          <br>
-          <button type="submit">Заказать звонок</button>
-        </fieldset>
-      </form>
-    </footer>
-  </div>
+        <label for="phabout">Телефон</label>
+        <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
+        <br>
+        <label for="personalData">согласен на обработку персональгых данных</label>
+        <input type="checkbox" required name="personalData">
+        <br>
+        <button type="submit">Заказать звонок</button>
+      </fieldset>
+    </form>
+  </footer>
 </body>
 
 </html>
