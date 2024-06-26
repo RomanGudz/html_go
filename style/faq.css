@@ -1,3 +1,11 @@
+.faq__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .faq__item {
   background-color: #fff;
   color: #1c1a1a;
