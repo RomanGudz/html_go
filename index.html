@@ -12,160 +12,169 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <a href="#">
-        <img src="./img/logo.png" alt="Логотип компании">
+      <a href="#" class="header__link">
+        <img src="./img/logo.png" alt="Логотип компании" class="logo">
       </a>
-      <h1>Меню</h1>
+      <h1 class="header__title-h1">Меню</h1>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#halls">Залы</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#halls" class="navigation__link">Залы</a>
           </li>
-          <li>
-            <a href="#about">О нас</a>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">О нас</a>
           </li>
-          <li>
-            <a href="#booking">Бронь</a>
+          <li class="navigation__item">
+            <a href="#booking" class="navigation__link">Бронь</a>
           </li>
-          <li>
-            <a href="#reviews">Отзывы</a>
+          <li class="navigation__item">
+            <a href="#reviews" class="navigation__link">Отзывы</a>
           </li>
-          <li>
-            <a href="#contacts">Контакты</a>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Контакты</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="banner">
       <div class="container">
-        <h2 class="banner_title-h2">GAME OVER</h2>
-        <h3 class="banner_title-h3">Новый формат игр и отдыха</h3>
+        <h2 class="banner__title-h2">GAME OVER</h2>
+        <h3 class="banner__title-h3">Новый формат игр и отдыха</h3>
       </div>
     </section>
 
     <section id="halls" class="halls">
       <div class="container">
-        <h3 class="halls-title">Наши залы</h3>
-        <ol class="halls-list">
-          <li class="list-item bg-80s_vibe"><a href="vibes.html" class="item-link">80`s
-              vibes</a></li>
-          <li class="list-item bg-star_wars"><a href="starwars.html" class="item-link">Star
-              wars</a></li>
-          <li class="list-item bg-wild_west"><a href="wildwest.html" class="item-link">Wild
-              west</a></li>
-          <li class="list-item bg-neon_style"><a href="neon.html" class="item-link">Neon
-              style</a></li>
+        <h3 class="halls__title">Наши залы</h3>
+        <ol class="halls__list">
+          <li class="halls__item item__bg_80s-vibe">
+            <a href="vibes.html" class="halls__item_link">80`s
+              vibes</a>
+          </li>
+          <li class="halls__item item__bg_star-wars">
+            <a href="starwars.html" class="halls__item_link">Star
+              wars</a>
+          </li>
+          <li class="halls__item item__bg_wild-west">
+            <a href="wildwest.html" class="halls__item_link">Wild
+              west</a>
+          </li>
+          <li class="halls__item item__bg_neon-style">
+            <a href="neon.html" class="halls__item_link">Neon
+              style</a>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section>
+    <section class="booking">
       <div class="container">
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking">
-          <h3>Забронировать</h3>
-          <fieldset>
-            <legend>залы</legend>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking" class="booking__form">
+          <h3 class="booking__form-title">Забронировать</h3>
+          <fieldset class="booking__form-fieldset  fieldset-halls">
+            <legend class="booking__form-legend-halls">залы</legend>
             <label>
-              <input type="radio" name="halls" value="80`sVibes">
+              <input type="radio" name="halls" value="80`sVibes" class="booking__form-input-halls">
               80`s vibes</label>
             <label>
-              <input type="radio" name="halls" value="StarWars">
+              <input type="radio" name="halls" value="StarWars" class="booking__form-input-halls">
               Star wars</label>
             <label>
-              <input type="radio" name="halls" value="WildWest">
+              <input type="radio" name="halls" value="WildWest" class="booking__form-input-halls">
               Wild west
             </label>
             <label>
-              <input type="radio" name="halls" value="NeonStyle">
+              <input type="radio" name="halls" value="NeonStyle" class="booking__form-input-halls">
               Neon style
             </label>
           </fieldset>
 
-          <fieldset>
-            <legend>собери набор развлечений</legend>
+          <fieldset class="booking__form-fieldset">
+            <legend class="booking__form-legend-entertainment">собери набор развлечений</legend>
 
-            <fieldset>
-              <legend>Приставка</legend>
+            <fieldset class="booking__form-fieldset-console">
+              <legend class="booking__form-legend-console">Приставка</legend>
               <label>
-                <input type="radio" name="console" value="PlayStation">
+                <input type="radio" name="console" value="PlayStation" class="booking__form-input-console">
                 PlayStation
               </label>
               <label>
-                <input type="radio" name="console" value="SegaMegaDrive">
+                <input type="radio" name="console" value="SegaMegaDrive" class="booking__form-input-console">
                 Sega Mega Drive
               </label>
               <label>
-                <input type="radio" name="console" value="X-boxAboutS">
+                <input type="radio" name="console" value="X-boxAboutS" class="booking__form-input-console">
                 X-box about S
               </label>
               <label>
-                <input type="radio" name="console" value="Dendy">
+                <input type="radio" name="console" value="Dendy" class="booking__form-input-console">
                 Dendy
               </label>
 
             </fieldset>
 
-            <fieldset>
-              <legend>Настольные игры</legend>
-              <label><input type="checkbox" name="boardGame" value="Jenga">
+            <fieldset class="booking__form-fieldset-board-game">
+              <legend class="booking__form-legend-board-game">Настольные игры</legend>
+              <label><input type="checkbox" name="boardGame" value="Jenga" class="booking__form-input-boardgame">
                 Jenga
               </label>
-              <label><input type="checkbox" name="boardGame" value="Monopoly">
+              <label><input type="checkbox" name="boardGame" value="Monopoly" class="booking__form-input-boardgame">
                 Monopoly
               </label>
-              <label><input type="checkbox" name="boardGame" value="Манчкин">
+              <label><input type="checkbox" name="boardGame" value="Манчкин" class="booking__form-input-boardgame">
                 Манчкин
               </label>
-              <label><input type="checkbox" name="boardGame" value="Alias">
+              <label><input type="checkbox" name="boardGame" value="Alias" class="booking__form-input-boardgame">
                 Alias
               </label>
             </fieldset>
 
-            <fieldset>
-              <legend>Дополнительно</legend>
-              <label><input type="checkbox" name="additionally" value="VR">
+            <fieldset class="booking__form-fieldset-options">
+              <legend class="booking__form-legend-options">Дополнительно</legend>
+              <label><input type="checkbox" name="additionally" value="VR" class="booking__form-input-option">
                 VR
               </label>
-              <label><input type="checkbox" name="additionally" value="Karaoke">
+              <label><input type="checkbox" name="additionally" value="Karaoke" class="booking__form-input-option">
                 Караоке
               </label>
             </fieldset>
           </fieldset>
 
-          <fieldset>
-            <legend>выбери дату и время</legend>
-            <label for="date">Дата*</label>
-            <input type="date" name="date" required>
+          <fieldset class="booking__form-fieldset-booking-date">
+            <legend class="booking__form-legend-booking-date">выбери дату и время</legend>
+            <label for="date" class="booking__form-label-booking-date">Дата*</label>
+            <input type="date" name="date" required class="booking__form-input-booking-date">
 
-            <label for="time">Время*</label>
-            <input type="time" name="time" required>
+            <label for="time" class="booking__form-label-booking-date">Время*</label>
+            <input type="time" name="time" required class="booking__form-input-booking-date">
             <br>
-            <label for="people">Количество человек*</label>
-            <input type="number" name="people" required>
+            <label for="people" class="booking__form-label-booking-date">Количество человек*</label>
+            <input type="number" name="people" required class="booking__form-input-booking-date">
             <br>
-            <label for="name">Имя*</label>
-            <input type="text" name="name" required>
+            <label for="name" class="booking__form-label-booking-date">Имя*</label>
+            <input type="text" name="name" required class="booking__form-input-booking-date">
 
-            <label for="lastName">Фамилия*</label>
-            <input type="text" name="lastName" required>
+            <label for="lastName" class="booking__form-label-booking-date">Фамилия*</label>
+            <input type="text" name="lastName" required class="booking__form-input-booking-date">
             <br>
-            <label for="phabout">Номер телефона*</label>
-            <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
+            <label for="phabout" class="booking__form-label-booking-date">Номер телефона*</label>
+            <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__"
+              class="booking__form-input-booking-date">
             <br>
-            <label for="email">E-mail</label>
-            <input type="email" name="email">
+            <label for="email" class="booking__form-label-booking-date">E-mail</label>
+            <input type="email" name="email" class="booking__form-input-booking-date">
 
             <br>
-            <input type="checkbox">Я страше 18 лет
+            <input type="checkbox" class="booking__form-input-adult">Я страше 18 лет
           </fieldset>
 
-          <button type="submit">Забронировать</button>
+          <button type="submit" class="booking__form-button">Забронировать</button>
         </form>
       </div>
     </section>
@@ -173,31 +182,31 @@
     <section id="about" class="about">
       <div class="container">
 
-        <h2 class="about-title_h2">О нас</h2>
-        <h3>У нас есть все для классного отдыха с друзьями</h3>
-        <figure>
-          <img src="./img/vr.png" alt="VR очки">
-          <figcaption>VR очки</figcaption>
+        <h2 class="about__title-h2">О нас</h2>
+        <h3 class="about__title-h3">У нас есть все для классного отдыха с друзьями</h3>
+        <figure class="about__figure">
+          <img src="./img/vr.png" alt="VR очки" class="about__figure-img">
+          <figcaption class="about__figure-figcaption">VR очки</figcaption>
 
-          <img src="./img/audio.png" alt="Аудиосистема 5.1 с отличным звуком">
-          <figcaption> Аудиосистема 5.1 с отличным звуком</figcaption>
+          <img src="./img/audio.png" alt="Аудиосистема 5.1 с отличным звуком" class="about__figure-img">
+          <figcaption class="about__figure-figcaption"> Аудиосистема 5.1 с отличным звуком</figcaption>
 
-          <img src="./img/micro.png" alt="Караоке">
-          <figcaption> Караоке (4 микрофона)</figcaption>
+          <img src="./img/micro.png" alt="Караоке" class="about__figure-img">
+          <figcaption class="about__figure-figcaption"> Караоке (4 микрофона)</figcaption>
 
-          <img src="./img/game.png" alt="Настольные игры">
-          <figcaption> Настольные игры</figcaption>
+          <img src="./img/game.png" alt="Настольные игры" class="about__figure-img">
+          <figcaption class="about__figure-figcaption"> Настольные игры</figcaption>
 
-          <img src="./img/netflix.png" alt="Кино сервисы">
-          <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+          <img src="./img/netflix.png" alt="Кино сервисы" class="about__figure-img">
+          <figcaption class="about__figure-figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
 
-          <img src="./img/sony.png" alt="PlayStation5">
-          <figcaption> PlayStation5</figcaption>
+          <img src="./img/sony.png" alt="PlayStation5" class="about__figure-img">
+          <figcaption class="about__figure-figcaption"> PlayStation5</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="about-text">
+    <section class="about__text">
       <div class="container">
         <p>Для нащих гостей мы создали концептуально новое игровое пространство виртуальной реальности в
           центральной части города.</p>
@@ -206,14 +215,14 @@
       </div>
     </section>
 
-    <section>
+    <section class="about__cite">
       <div class="container">
         <blockquote>
-          <p class="cite-text"> GAME OVER-
+          <p class="about__cite-text"> GAME OVER-
             это место незабываемых впечатлений </p>
-          <figure class="cite-img">
+          <figure class="about__figure-cite">
             <img src="./img/Ellipse.png" alt="фото Аркадий Абакшин">
-            <figcaption class="cite">Аркадий Абакшин,
+            <figcaption class="about__cite-figcaption">Аркадий Абакшин,
               создатель игровой
               територии GAME OVER</figcaption>
           </figure>
@@ -221,12 +230,11 @@
       </div>
     </section>
 
-    <section id="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
-
-        <ul>
-          <li>
-            <figure>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <figure class="reviews__item-figure">
               <img src="#" alt="фото Макс Самойлов">
               <figcaption>Макс Самойлов</figcaption>
               <figcaption>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто
@@ -235,8 +243,8 @@
                 еще не был в таком полном игровом погружении. Сервис на высоте</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="reviews__item">
+            <figure class="reviews__item-figure">
               <img src="#" alt="фото Оксана Григорьева">
               <figcaption>Оксана Григорьева</figcaption>
               <figcaption>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в
@@ -245,8 +253,8 @@
                 нет подобных заведений.</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="reviews__item">
+            <figure class="reviews__item-figure">
               <img src="#" alt="фото Никита Ященко">
               <figcaption>Никита Ященко</figcaption>
               <figcaption>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных
@@ -259,66 +267,67 @@
       </div>
     </section>
 
-    <section>
+    <section class="faq">
       <div class="container">
-        <h2>Частые вопросы</h2>
+        <h2 class="faq__title">Частые вопросы</h2>
 
-        <ul class="faq-list">
-          <li class="faq-item">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq-item">Могут ли вернуть деньги за бронь?</li>
-          <li class="faq-item">Какая комната самая популярная?</li>
-          <li class="faq-item">Как получить VIP карту?</li>
-          <li class="faq-item">Какая комната самая популярная?</li>
+        <ul class="faq__list">
+          <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+          <li class="faq__item">Могут ли вернуть деньги за бронь?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
+          <li class="faq__item">Как получить VIP карту?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <section id="contacts" class="contacts">
       <div class="container">
 
-        <h3 class="contact-title">Контакты</h3>
+        <h3 class="contacts__title">Контакты</h3>
 
-        <ul class="contacts-list">
-          <li class="item-contact location">
-            <p class="address">г. Москва
+        <ul class="contacts__list">
+          <li class="contact__item location">
+            <p class="contact__p-address">г. Москва
               ул. Аквамарина, 16</p>
           </li>
-          <li class="item-contact phone">
-            <a href="tel:89509302893" class="link-contact">8(950)930-28-93</a>
+          <li class="contact__item phone">
+            <a href="tel:89509302893" class="contact__link">8(950)930-28-93</a>
           </li>
-          <li class="item-contact email">
-            <a href="mailto:GameOver@gmail.com" class="link-contact">GameOver@gmail.com</a>
+          <li class="contact__item email">
+            <a href="mailto:GameOver@gmail.com" class="contact__link">GameOver@gmail.com</a>
           </li>
         </ul>
 
-        <ul class="contacts-social-list">
-          <li class="social-item">
-            <a href="https://vk.com/" target="_blank" class="social-link">
+        <ul class="contacts__list-social">
+          <li class="contact__item-social">
+            <a href="https://vk.com/" target="_blank" class="contact__link-social">
               <svg width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M23.9999 0C10.7449 0 -0.00012207 10.745 -0.00012207 24C-0.00012207 37.255 10.7449 48 23.9999 48C37.2549 48 47.9999 37.255 47.9999 24C47.9999 10.745 37.2549 0 23.9999 0ZM33.2299 27.0775C33.2299 27.0775 35.3524 29.1725 35.8749 30.145C35.8899 30.165 35.8974 30.185 35.9024 30.195C36.1149 30.5525 36.1649 30.83 36.0599 31.0375C35.8849 31.3825 35.2849 31.5525 35.0799 31.5675H31.3299C31.0699 31.5675 30.5249 31.5 29.8649 31.045C29.3574 30.69 28.8574 30.1075 28.3699 29.54C27.6424 28.695 27.0124 27.965 26.3774 27.965C26.2967 27.9649 26.2166 27.9775 26.1399 28.0025C25.6599 28.1575 25.0449 28.8425 25.0449 30.6675C25.0449 31.2375 24.5949 31.565 24.2774 31.565H22.5599C21.9749 31.565 18.9274 31.36 16.2274 28.5125C12.9224 25.025 9.94738 18.03 9.92238 17.965C9.73488 17.5125 10.1224 17.27 10.5449 17.27H14.3324C14.8374 17.27 15.0024 17.5775 15.1174 17.85C15.2524 18.1675 15.7474 19.43 16.5599 20.85C17.8774 23.165 18.6849 24.105 19.3324 24.105C19.4538 24.1036 19.573 24.0727 19.6799 24.015C20.5249 23.545 20.3674 20.5325 20.3299 19.9075C20.3299 19.79 20.3274 18.56 19.8949 17.97C19.5849 17.5425 19.0574 17.38 18.7374 17.32C18.8669 17.1413 19.0375 16.9964 19.2349 16.8975C19.8149 16.6075 20.8599 16.565 21.8974 16.565H22.4749C23.5999 16.58 23.8899 16.6525 24.2974 16.755C25.1224 16.9525 25.1399 17.485 25.0674 19.3075C25.0449 19.825 25.0224 20.41 25.0224 21.1C25.0224 21.25 25.0149 21.41 25.0149 21.58C24.9899 22.5075 24.9599 23.56 25.6149 23.9925C25.7003 24.0461 25.799 24.0746 25.8999 24.075C26.1274 24.075 26.8124 24.075 28.6674 20.8925C29.2395 19.8681 29.7366 18.8037 30.1549 17.7075C30.1924 17.6425 30.3024 17.4425 30.4324 17.365C30.5283 17.3161 30.6347 17.2912 30.7424 17.2925H35.1949C35.6799 17.2925 36.0124 17.365 36.0749 17.5525C36.1849 17.85 36.0549 18.7575 34.0224 21.51L33.1149 22.7075C31.2724 25.1225 31.2724 25.245 33.2299 27.0775Z" />
               </svg>
             </a>
           </li>
-          <li class="social-item"><a href="https://web.tlgrm.app/" target="_blank" class="social-link">
+          <li class="contact__item-social"><a href="https://web.tlgrm.app/" target="_blank"
+              class="contact__link-social">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M47.9999 24C47.9999 30.3652 45.4713 36.4697 40.9704 40.9706C36.4696 45.4714 30.3651 48 23.9999 48C17.6347 48 11.5302 45.4714 7.02932 40.9706C2.52844 36.4697 -0.00012207 30.3652 -0.00012207 24C-0.00012207 17.6348 2.52844 11.5303 7.02932 7.02944C11.5302 2.52856 17.6347 0 23.9999 0C30.3651 0 36.4696 2.52856 40.9704 7.02944C45.4713 11.5303 47.9999 17.6348 47.9999 24ZM24.8609 17.718C22.5269 18.69 17.8589 20.7 10.8629 23.748C9.72888 24.198 9.13188 24.642 9.07788 25.074C8.98788 25.803 9.90288 26.091 11.1479 26.484L11.6729 26.649C12.8969 27.048 14.5469 27.513 15.4019 27.531C16.1819 27.549 17.0489 27.231 18.0059 26.571C24.5429 22.158 27.9179 19.929 28.1279 19.881C28.2779 19.845 28.4879 19.803 28.6259 19.929C28.7669 20.052 28.7519 20.289 28.7369 20.352C28.6469 20.739 25.0559 24.075 23.1989 25.803C22.6199 26.343 22.2089 26.724 22.1249 26.811C21.9399 27 21.7519 27.1861 21.5609 27.369C20.4209 28.467 19.5689 29.289 21.6059 30.633C22.5869 31.281 23.3729 31.812 24.1559 32.346C25.0079 32.928 25.8599 33.507 26.9639 34.233C27.2429 34.413 27.5129 34.608 27.7739 34.794C28.7669 35.502 29.6639 36.138 30.7649 36.036C31.4069 35.976 32.0699 35.376 32.4059 33.576C33.2009 29.325 34.7639 20.118 35.1239 16.323C35.1458 16.0075 35.1328 15.6906 35.0849 15.378C35.0566 15.1258 34.9346 14.8934 34.7429 14.727C34.4699 14.5386 34.1445 14.4409 33.8129 14.448C32.9129 14.463 31.5239 14.946 24.8609 17.718Z" />
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="https://ru.pinterest.com/" target="_blank" class="social-link">
+          <li class="contact__item-social">
+            <a href="https://ru.pinterest.com/" target="_blank" class="contact__link-social">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z" />
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="https://www.stumbleupon.com/" target="_blank" class="social-link">
+          <li class="contact__item-social">
+            <a href="https://www.stumbleupon.com/" target="_blank" class="contact__link-social">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z" />
@@ -330,25 +339,31 @@
         </ul>
       </div>
     </section>
+    <section class="request-call">
+      <div class="container">
+        <form action="https://jsonplaceholder.typicode.com/posts" widht="100" id="backCall" method="POST"
+          class="request-call__form">
+          <fieldset class="request-call__form-fieldset">
+            <legend class="request-call__form-legend">Заказать звонок</legend>
+            <label for="name" class="request-call__form-label">Имя</label>
+            <input type="text" placeholder="Введите имя" name="name" class="request-call__form-input">
 
-    <form action="https://jsonplaceholder.typicode.com/posts" widht="100" id="backCall" method="POST">
-      <fieldset>
-        <legend>Заказать звонок</legend>
-        <label for="name">Имя</label>
-        <input type="text" placeholder="Введите имя" name="name">
+            <label for="lastName" class="request-call__form-label">Фамилия</label>
+            <input type="text" placeholder="Введите фамилию" name="lastName" required class="request-call__form-input">
 
-        <label for="lastName">Фамилия</label>
-        <input type="text" placeholder="Введите фамилию" name="lastName" required>
+            <label for="phabout" class="request-call__form-label">Телефон</label>
+            <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__"
+              class="request-call__form-input">
+            <br>
+            <label for="personalData" class="request-call__form-label">согласен на обработку персональгых данных</label>
+            <input type="checkbox" required name="personalData" class="request-call__form-input">
+            <br>
+            <button type="submit" class="request-call__form-button">Заказать звонок</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
 
-        <label for="phabout">Телефон</label>
-        <input type="tel" name="phabout" required inputmode="tel" placeholder="+7(___)-___-__-__">
-        <br>
-        <label for="personalData">согласен на обработку персональгых данных</label>
-        <input type="checkbox" required name="personalData">
-        <br>
-        <button type="submit">Заказать звонок</button>
-      </fieldset>
-    </form>
   </footer>
 </body>
 

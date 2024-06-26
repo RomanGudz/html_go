@@ -3,18 +3,14 @@
   text-transform: uppercase;
 }
 
-.halls-list {
-  list-style: none;
-}
-
-.halls-title {
+.halls__title {
   font-size: 40px;
   line-height: 125%;
   text-align: center;
   margin-bottom: 60px;
 }
 
-.item-link {
+.halls__item_link {
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -22,32 +18,29 @@
   white-space: pre-line;
 }
 
-.list-item {
+.halls__item {
   margin-bottom: 60px;
   background-size: auto;
   height: 710px;
   width: 1180px;
   text-align: center;
+  font-size: 70px;
+  line-height: 114%;
 }
 
-.list-item:last-of-type {
+.halls__item:last-of-type {
   margin-bottom: 0px;
 }
 
-.bg-80s_vibe {
+.item__bg_80s-vibe {
   background-image: url("../img/80s_vibes.jpg");
 }
-.bg-star_wars {
+.item__bg_star-wars {
   background-image: url("../img/star_wars.jpg");
 }
-.bg-wild_west {
+.item__bg_wild-west {
   background-image: url("../img/wild_west.jpg");
 }
-.bg-neon_style {
+.item__bg_neon-style {
   background-image: url("../img/neon_style.jpg");
-}
-
-.item-link {
-  font-size: 70px;
-  line-height: 114%;
 }

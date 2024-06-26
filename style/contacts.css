@@ -3,28 +3,24 @@
   font-size: 24px;
 }
 
-.contact-title {
+.contacts__title {
   font-size: 40px;
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
   margin: 100px 0 53px 0;
 }
-.contacts-list {
-  list-style: none;
-}
 
-.contacts-social-list {
-  list-style: none;
+.contacts__list-social {
   display: flex;
   padding-top: 39px;
 }
 
-.social-item {
+.contact__item-social {
   margin-right: 26px;
 }
 
-.item-contact {
+.contact__item {
   padding-left: 61px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -43,15 +39,15 @@
   background-image: url("../img/envelope.svg");
 }
 
-.address {
+.contact__p-address {
   white-space: pre-line;
 }
 
-.link-contact {
+.contact__link {
   text-decoration: none;
   color: inherit;
 }
 
-.social-link {
+.contact__link-social {
   color: #fff;
 }

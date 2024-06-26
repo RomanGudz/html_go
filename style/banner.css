@@ -1,4 +1,4 @@
-.banner_title-h3:after {
+.banner__title-h3:after {
   content: "";
 
   width: 675px;
@@ -10,7 +10,7 @@
   top: -90px;
 }
 
-.banner_title-h2 {
+.banner__title-h2 {
   font-weight: 900;
   font-size: 150px;
   text-align: left;
@@ -18,7 +18,7 @@
   letter-spacing: -0.1em;
 }
 
-.banner_title-h3 {
+.banner__title-h3 {
   font-size: 28px;
   padding: 0 0 0 100px;
   display: flex;
