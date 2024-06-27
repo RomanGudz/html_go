@@ -1,14 +1,18 @@
+.banner__img {
+  min-height: 823px;
+  position: relative;
+}
+
 .banner__img:after {
   content: "";
-  display: block;
   width: 675px;
   height: 762px;
   background-image: url("../img/hero_image.png");
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
-  margin-left: 505px;
-  top: -90px;
+  position: absolute;
+  top: 61px;
+  right: 0;
 }
 
 .banner__title-h2 {
