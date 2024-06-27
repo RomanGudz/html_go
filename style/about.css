@@ -1,15 +1,29 @@
-.about {
+.about__block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about__block:first-of-type {
+  margin-right: 74px;
 }
 
 .about__title-h2 {
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .about__text {
   font-size: 20px;
   line-height: 140%;
+  max-width: 500px;
+  margin-bottom: 48px;
+}
+
+.about__blockquote {
+  margin: 0 0 0 0;
+  max-width: 500px;
 }
 
 .about__cite-text {
@@ -17,6 +31,7 @@
   line-height: 114%;
   text-transform: uppercase;
   white-space: pre-line;
+  margin-bottom: 40px;
 }
 
 .about__cite-text:after {
@@ -38,8 +53,10 @@
 
 .about__figure-cite {
   display: flex;
-  padding-top: 40px;
   justify-content: flex-end;
-  margin: 0 0 0 500px;
-  gap: 30px;
+  gap: 29px;
+}
+
+.about__text-p {
+  margin-bottom: 1em;
 }
