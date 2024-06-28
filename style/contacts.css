@@ -14,10 +14,10 @@
 .contacts__list-social {
   display: flex;
   padding-top: 39px;
+  gap: 26px;
 }
 
 .contact__item-social {
-  margin-right: 26px;
 }
 
 .contact__item {
