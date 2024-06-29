@@ -77,13 +77,14 @@ section {
   padding-top: 100px;
 }
 
-section:last-of-type {
-  padding-bottom: 51px;
+/* section:last-of-type {
+  padding-bottom: 101px;
+  padding-top: 0;
 }
 
 section:first-of-type {
   padding-top: 146px;
-}
+} */
 /*
 Доступно скрываю элементы
 */

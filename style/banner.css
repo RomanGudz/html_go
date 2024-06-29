@@ -1,3 +1,7 @@
+.banner {
+  padding-top: 146px;
+}
+
 .banner__img {
   min-height: 823px;
   position: relative;
