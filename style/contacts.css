@@ -22,7 +22,7 @@
   gap: 26px;
 }
 
-.contact__item-social {
+.contact__item-social:active {
 }
 
 .contact__item {
@@ -44,6 +44,29 @@
   background-image: url("../img/envelope.svg");
 }
 
+.location:hover,
+.location:focus {
+  color: #eadeed;
+}
+.phone:hover,
+.phone:focus {
+  color: #eadeed;
+}
+.email:hover,
+.email:focus {
+  color: #eadeed;
+}
+
+.location:active {
+  color: #6c0287;
+}
+.phone:active {
+  color: #6c0287;
+}
+.email:active {
+  color: #6c0287;
+}
+
 .contact__p-address {
   white-space: pre-line;
 }
@@ -55,4 +78,17 @@
 
 .contact__link-social {
   color: #fff;
+}
+
+.contact__link-social:hover {
+  color: #eadeed;
+}
+
+.contact__link-social:focus {
+  color: #eadeed;
+  outline: 1px solid #cd06ff;
+}
+
+.contact__link-social:active {
+  color: #cd06ff;
 }

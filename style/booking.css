@@ -54,6 +54,20 @@
   line-height: 133%;
 }
 
+.booking__form-label-halls:hover {
+  background-color: #eadeed;
+  border: 3px solid #640aa3;
+}
+
+.booking__form-label-halls:focus {
+  border: 3px solid #640aa3;
+}
+
+.booking__form-label-halls:active {
+  border: 3px solid #fff;
+  background-color: #6c0287;
+}
+
 .booking__form-input-halls {
   position: absolute;
   z-index: -1;
@@ -88,6 +102,10 @@
   height: 25px;
 }
 
+.booking__form-input-entertainment:focus {
+  outline: 1px solid #cd06ff;
+}
+
 .booking__form-fieldset-booking-date {
   display: flex;
   gap: 14px 36px;
@@ -111,6 +129,10 @@
   min-width: 300px;
 }
 
+.booking__form-input-booking-date:focus {
+  outline: 2px solid #cd06ff;
+}
+
 .small-input {
   min-width: 134px;
 }
@@ -130,6 +152,21 @@
   padding: 16px 50px;
   align-self: flex-end;
   margin-right: 100px;
+}
+
+.booking__form-button:hover {
+  border: 3px solid #6c0287;
+  background-color: #eadeed;
+}
+
+.booking__form-button:focus {
+  border: 3px solid #6c0287;
+  background-color: #fff;
+}
+
+.booking__form-button:active {
+  border-radius: 10px;
+  background-color: #eadeed;
 }
 .booking__form-fieldset {
 }

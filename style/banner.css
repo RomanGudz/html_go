@@ -89,7 +89,35 @@
   position: relative;
 }
 
-.banner__svg-down {
-  align-self: center;
+.banner__button-booking:hover,
+.banner__button-booking:focus {
+  background-color: #840aa3;
+}
+
+.banner__button-booking:active {
+  background-color: #640aa3;
+}
+.banner__svg-down::after {
+  content: "";
+  display: inline;
+  width: 97px;
+  height: 97px;
+  background-image: url(../img/down.svg);
+  background-size: contain;
+  position: absolute;
+  left: 539px;
   z-index: 1;
+}
+
+.banner__svg-down:hover::after {
+  content: "";
+  background-image: url(../img/down-hover.svg);
+}
+.banner__svg-down:focus::after {
+  content: "";
+  background-image: url(../img/down-focus.svg);
+}
+.banner__svg-down:active::after {
+  content: "";
+  background-image: url(../img/down-active.svg);
 }

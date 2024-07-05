@@ -27,3 +27,32 @@
   text-transform: uppercase;
   color: #fff;
 }
+
+.navigation__button-call:hover,
+.navigation__button-call:focus {
+  border: 3px solid #6c0287;
+  background: #6c0287;
+}
+
+.navigation__button-call:active {
+  border: 1px solid #000;
+  background: #640aa3;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #6c0287;
+}
+
+.navigation__link:active {
+  color: #640aa3;
+}
+
+.header__link:hover,
+.header__link:focus {
+  background: #cd06ff;
+}
+
+.header__link:active {
+  background: #640aa3;
+}
