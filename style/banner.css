@@ -1,10 +1,13 @@
 .banner {
-  padding-top: 146px;
+  padding-top: 50px;
 }
 
 .banner__img {
   min-height: 823px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
 }
 
 .banner__img:after {
@@ -29,6 +32,64 @@
 
 .banner__title-h3 {
   font-size: 28px;
+  font-weight: 400;
   padding: 0 0 0 100px;
+}
+
+.banner__wrapper-flex {
   display: flex;
+  gap: 40px;
+  padding-top: 30px;
+  align-self: flex-start;
+  margin-bottom: 150px;
+}
+
+.banner__title-h3-halls {
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: 193px;
+  text-align: center;
+}
+.banner__title-h3-halls::before {
+  content: "4";
+  font-weight: 900;
+  font-size: 100px;
+  color: #cd06ff;
+}
+
+.banner__title-h3-new {
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: 166px;
+  align-self: end;
+}
+
+.banner__title-h3-new::before {
+  content: "new";
+  font-weight: 900;
+  font-size: 75px;
+  font-variant: all-small-caps;
+  color: #cd06ff;
+}
+
+.banner__button-booking {
+  background: #6c0287;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 24px 68px;
+  align-self: flex-start;
+  position: relative;
+}
+
+.banner__svg-down {
+  align-self: center;
+  z-index: 1;
 }

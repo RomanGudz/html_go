@@ -1,46 +1,143 @@
-.booking {
+.booking__wrapper-bg {
+  background-color: #440f51;
+  padding: 80px 0;
 }
+
+.booking__h3 {
+  font-size: 40px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .booking__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.fieldset-halls {
+  display: flex;
+  flex-direction: row;
+  gap: 40px 60px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.booking__form-legend {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+}
+
+.margin-bottom {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.margin-bottom:last-of-type {
+  margin-bottom: 38px;
+}
+
+.booking__form-label-halls {
+  border-radius: 8px;
+  width: 250px;
+  height: 55px;
+  padding: 8px 0;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+}
+
+.booking__form-input-halls {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.fieldset-entertainment-set {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+  padding-left: 100px;
+  margin-bottom: 60px;
+}
+
+.booking__form-fieldset-entertainment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking__form-label-entertainment {
+  font-size: 22px;
+}
+
+.booking__form-label-entertainment:first-of-type {
+  padding-top: 23px;
+}
+
+.booking__form-input-entertainment {
+  width: 25px;
+  height: 25px;
+}
+
+.booking__form-fieldset-booking-date {
+  display: flex;
+  gap: 14px 36px;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: space-around;
+  padding: 0 100px;
+  margin-bottom: 40px;
+}
+
+.booking__form-label-booking-date {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+}
+
+.booking__form-input-booking-date {
+  flex-basis: 52px;
+  min-width: 300px;
+}
+
+.small-input {
+  min-width: 134px;
+}
+
+.booking__form-date-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-basis: 52px;
 }
 .booking__form-button {
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #6c0287;
+  padding: 16px 50px;
+  align-self: flex-end;
+  margin-right: 100px;
 }
 .booking__form-fieldset {
 }
-.booking__form-fieldset-board-game {
-}
-.booking__form-fieldset-booking-date {
-}
-.booking__form-fieldset-console {
-}
-.booking__form-fieldset-options {
-}
+
 .booking__form-input-adult {
 }
 .booking__form-input-boardgame {
 }
-.booking__form-input-booking-date {
-}
-.booking__form-input-console {
-}
-.booking__form-input-halls {
-}
-.booking__form-input-option {
-}
-.booking__form-label-booking-date {
-}
-.booking__form-legend-board-game {
-}
+
 .booking__form-legend-booking-date {
-}
-.booking__form-legend-console {
-}
-.booking__form-legend-entertainment {
-}
-.booking__form-legend-halls {
-}
-.booking__form-legend-options {
-}
-.booking__form-title {
-}
-.fieldset-halls {
 }

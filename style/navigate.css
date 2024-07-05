@@ -1,0 +1,29 @@
+.header {
+  padding-top: 30px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.navigation__link {
+  line-height: 227%;
+  text-transform: uppercase;
+}
+
+.navigation__button-call {
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+  background: #1b1a1b;
+  width: 280px;
+  height: 55px;
+  text-transform: uppercase;
+  color: #fff;
+}

@@ -1,6 +1,7 @@
 @import "./normalize.css";
 @import "./global.css";
 @import "./style.css";
+@import "./navigate.css";
 @import "./faq.css";
 @import "./banner.css";
 @import "./halls.css";
@@ -9,3 +10,4 @@
 @import "./booking.css";
 @import "./request-call__form.css";
 @import "./reviews.css";
+@import "./our-services.css";
