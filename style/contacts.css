@@ -39,9 +39,12 @@
   margin-bottom: 10px;
 }
 
-.contact__item:hover,
-.contact__item:focus {
+.contact__item:hover {
   color: #eadeed;
+}
+
+.contact__link:focus {
+  outline: solid 2px #6c0287;
 }
 
 .contact__item:active {

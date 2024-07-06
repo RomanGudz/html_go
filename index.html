@@ -182,11 +182,13 @@
             <fieldset class="booking__form-fieldset-booking-date">
               <legend class="booking__form-legend margin-bottom">выбери дату и время</legend>
               <div class="booking__form-date-wrapper">
-                <label for="date" class="booking__form-label-booking-date ">Дата*
-                  <input type="date" name="date" required class="booking__form-input-booking-date small-input">
+                <label for="date" class="booking__form-label-booking-date">Дата*
+                  <input type="text" name="date" required class="booking__form-input-booking-date small-input"
+                    onfocus="(this.type='date')" onblur="(this.type='text')">
                 </label>
                 <label for="time" class="booking__form-label-booking-date ">Время*
-                  <input type="time" name="time" required class="booking__form-input-booking-date small-input">
+                  <input type="text" name="time" required class="booking__form-input-booking-date small-input"
+                    onfocus="(this.type='time')" onblur="(this.type='text')">
                 </label>
               </div>
               <label for="name" class="booking__form-label-booking-date">Имя*

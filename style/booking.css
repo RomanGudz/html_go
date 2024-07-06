@@ -53,11 +53,11 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 133%;
+  cursor: pointer;
 }
 
 .booking__form-label-halls:hover {
   background-color: #eadeed;
-  border: 3px solid #640aa3;
 }
 
 .booking__form-label-halls:focus {
@@ -92,6 +92,7 @@
 
 .booking__form-label-entertainment {
   font-size: 22px;
+  cursor: pointer;
 }
 
 .booking__form-label-entertainment:first-of-type {
@@ -101,6 +102,7 @@
 .booking__form-input-entertainment {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .booking__form-input-entertainment:focus {
@@ -126,7 +128,7 @@
 
 .booking__form-input-booking-date {
   flex-basis: 52px;
-  min-width: 300px;
+  width: 300px;
 }
 
 .booking__form-input-booking-date:focus {
@@ -134,7 +136,7 @@
 }
 
 .small-input {
-  min-width: 134px;
+  width: 134px;
 }
 
 .booking__form-date-wrapper {
@@ -151,6 +153,7 @@
   color: #6c0287;
   padding: 16px 50px;
   align-self: flex-end;
+  border: 3px solid #6c0287;
 }
 
 .booking__form-button:hover {
@@ -165,15 +168,6 @@
 
 .booking__form-button:active {
   border-radius: 10px;
+  border: 3px solid #eadeed;
   background-color: #eadeed;
-}
-.booking__form-fieldset {
-}
-
-.booking__form-input-adult {
-}
-.booking__form-input-boardgame {
-}
-
-.booking__form-legend-booking-date {
 }
