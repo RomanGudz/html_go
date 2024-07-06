@@ -26,44 +26,25 @@
 }
 
 .contact__item {
-  padding-left: 61px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .location {
-  background-image: url("../img/location.svg");
-  background-size: 35px 32px;
-  margin-bottom: 54px;
+  margin-bottom: 39px;
 }
+
 .phone {
-  background-image: url("../img/phone-call.svg");
   margin-bottom: 10px;
 }
-.email {
-  background-image: url("../img/envelope.svg");
-}
 
-.location:hover,
-.location:focus {
-  color: #eadeed;
-}
-.phone:hover,
-.phone:focus {
-  color: #eadeed;
-}
-.email:hover,
-.email:focus {
+.contact__item:hover,
+.contact__item:focus {
   color: #eadeed;
 }
 
-.location:active {
-  color: #6c0287;
-}
-.phone:active {
-  color: #6c0287;
-}
-.email:active {
+.contact__item:active {
   color: #6c0287;
 }
 

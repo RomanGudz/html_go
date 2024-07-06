@@ -1,11 +1,15 @@
 .header {
   padding-top: 30px;
 }
-
+.header__flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 97px;
 }
 .navigation__list {
   display: flex;
@@ -46,6 +50,10 @@
 
 .navigation__link:active {
   color: #640aa3;
+}
+
+.header__link {
+  display: inline;
 }
 
 .header__link:hover,

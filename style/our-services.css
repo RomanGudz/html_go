@@ -3,6 +3,7 @@
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
+  white-space: pre-line;
 }
 .our-services__list-img {
   font-weight: 700;
@@ -12,6 +13,7 @@
   flex-basis: 380px;
   gap: 40px 20px;
   flex-wrap: wrap;
+  padding-top: 41px;
 }
 .our-services__list-img-item {
   flex-basis: 380px;

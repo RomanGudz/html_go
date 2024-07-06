@@ -9,36 +9,24 @@
   text-align: center;
   margin-bottom: 60px;
 }
-
+.halls__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
 .halls__item-link {
   text-decoration: none;
-  color: inherit;
-  position: relative;
-  top: 135px;
+  background-size: cover;
+  display: block;
+  width: 580px;
+  height: 349px;
+  padding: 94px 164px;
 }
 
 .halls__item {
-  display: inline-block;
-  background-size: auto;
-  height: 349px;
-  width: 580px;
-  background-size: contain;
-  background-repeat: no-repeat;
   text-align: center;
   font-size: 70px;
   line-height: 114%;
-}
-
-.halls__item:first-child {
-  margin-bottom: 20px;
-}
-
-.halls__item:not(:nth-child(2n)) {
-  margin-right: 14px;
-}
-
-.halls__item:last-of-type {
-  margin-bottom: 0px;
 }
 
 .halls__item--bg-80s-vibe {

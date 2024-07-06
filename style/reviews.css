@@ -9,20 +9,31 @@
   margin-bottom: 40px;
 }
 .reviews__list {
+  display: flex;
+  flex-direction: column;
   padding: 0 100px;
+  gap: 50px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+}
+
+.reviews__item-figure {
+  text-align: center;
+}
+
+.reviews__item-figure-img {
+  max-width: 280px;
 }
 
 .reviews__block {
-  vertical-align: top;
-  display: inline-block;
   line-height: 140%;
-  text-align: center;
-  margin: 0 20px 50px 0px;
 }
 
-.reviews__block:nth-child(2n) {
-  margin: 52px 0 0 0;
-  width: 680px;
-  text-align: left;
-  float: right;
+.reviews__block-padding-top {
+  padding-top: 52px;
 }
