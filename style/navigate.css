@@ -26,7 +26,7 @@
 }
 
 .navigation__button-call {
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--color-ruby);
   border-radius: 10px;
   background: #1b1a1b;
   width: 280px;
@@ -39,8 +39,8 @@
 
 .navigation__button-call:hover,
 .navigation__button-call:focus {
-  border: 3px solid #6c0287;
-  background-color: #6c0287;
+  border: 3px solid var(--main-color);
+  background-color: var(--main-color);
 }
 
 .navigation__button-call:active {
@@ -50,7 +50,7 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #6c0287;
+  color: var(--main-color);
 }
 
 .navigation__link:active {
@@ -65,7 +65,7 @@
 
 .header__link:hover,
 .header__link:focus {
-  background-color: #cd06ff;
+  background-color: var(--color-ruby);
 }
 
 .header__link:active {

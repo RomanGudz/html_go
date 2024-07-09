@@ -48,13 +48,13 @@
 .about__cite-text:after {
   content: "\201D";
   font-weight: 900;
-  color: #6c0287;
+  color: var(--main-color);
 }
 
 .about__cite-text:before {
   content: "\201C";
   font-weight: 900;
-  color: #6c0287;
+  color: var(--main-color);
 }
 .about__cite-figcaption {
   font-size: 20px;

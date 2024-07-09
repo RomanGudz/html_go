@@ -15,6 +15,7 @@
   flex-wrap: wrap;
   padding-top: 41px;
   perspective: 100px;
+  margin-bottom: 70px;
 }
 
 .our-services__list-img-item {
@@ -24,12 +25,13 @@
   padding-top: 166px;
   padding-left: 40px;
   transition-duration: 0.8s;
-
   transition-property: border, transform;
+  transform-origin: bottom;
 }
 
 .bg__item-audio {
   background-image: url("../img/audio.jpg");
+  transform: translateY(70px);
 }
 
 .bg__item-audio:hover {
@@ -55,6 +57,7 @@
 
 .bg__item-movie {
   background-image: url("../img/movie.jpg");
+  transform: translateY(70px);
 }
 
 .bg__item-movie:hover {

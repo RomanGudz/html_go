@@ -68,7 +68,7 @@
 
 .booking__form-label-halls:active {
   border: 3px solid #fff;
-  background-color: #6c0287;
+  background-color: var(--main-color);
 }
 
 .booking__form-input-halls {
@@ -108,7 +108,7 @@
 }
 
 .booking__form-input-entertainment:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-ruby);
 }
 
 .booking__form-fieldset-booking-date {
@@ -134,7 +134,7 @@
 }
 
 .booking__form-input-booking-date:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--color-ruby);
 }
 
 .small-input {
@@ -152,21 +152,21 @@
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--main-color);
   padding: 16px 50px;
   align-self: flex-end;
-  border: 3px solid #6c0287;
+  border: 3px solid var(--main-color);
   transition-duration: 0.5s;
   transition-property: background-color, border, border-radius;
 }
 
 .booking__form-button:hover {
-  border: 3px solid #6c0287;
+  border: 3px solid var(--main-color);
   background-color: #eadeed;
 }
 
 .booking__form-button:focus {
-  border: 3px solid #6c0287;
+  border: 3px solid var(--main-color);
   background-color: #fff;
 }
 

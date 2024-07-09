@@ -26,8 +26,24 @@
   text-align: center;
 }
 
+.reviews__item-figure::before {
+  content: "";
+  z-index: 10;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(196, 196, 196) 0%,
+    rgb(108, 2, 135) 100%
+  );
+  opacity: 0.2;
+}
+
 .reviews__item-figure-img {
   max-width: 280px;
+  border-radius: 50%;
 }
 
 .reviews__block {

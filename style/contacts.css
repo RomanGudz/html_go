@@ -46,11 +46,11 @@
 }
 
 .contact__link:focus {
-  outline: solid 2px #6c0287;
+  outline: solid 2px var(--main-color);
 }
 
 .contact__item:active {
-  color: #6c0287;
+  color: var(--main-color);
 }
 
 .contact__p-address {
@@ -74,9 +74,9 @@
 
 .contact__link-social:focus {
   color: #eadeed;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-ruby);
 }
 
 .contact__link-social:active {
-  color: #cd06ff;
+  color: var(--color-ruby);
 }

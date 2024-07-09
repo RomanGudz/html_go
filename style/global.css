@@ -77,6 +77,9 @@ section {
   padding: 50px 0;
 }
 
+footer {
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+}
 /* section:last-of-type {
   padding-bottom: 101px;
   padding-top: 0;
