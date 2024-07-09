@@ -35,6 +35,8 @@
   background-size: contain;
   width: 46px;
   height: 46px;
+  transition-duration: 0.6s;
+  transition-property: background-image;
 }
 
 .faq__item:hover::after {

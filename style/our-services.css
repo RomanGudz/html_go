@@ -14,29 +14,68 @@
   gap: 40px 20px;
   flex-wrap: wrap;
   padding-top: 41px;
+  perspective: 100px;
 }
+
 .our-services__list-img-item {
   flex-basis: 380px;
   height: 228px;
   align-items: flex-end;
   padding-top: 166px;
   padding-left: 40px;
+  transition-duration: 0.8s;
+
+  transition-property: border, transform;
 }
+
 .bg__item-audio {
   background-image: url("../img/audio.jpg");
+}
+
+.bg__item-audio:hover {
+  transform: translateY(20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
 }
 .bg__item-board-games {
   background-image: url("../img/board_game.jpg");
 }
+
+.bg__item-board-games:hover {
+  transform: translateX(40px) translateY(-20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
+}
 .bg__item-karaoke {
   background-image: url("../img/karaoke.jpg");
 }
+
+.bg__item-karaoke:hover {
+  transform: translateX(-40px) translateY(20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
+}
+
 .bg__item-movie {
   background-image: url("../img/movie.jpg");
 }
+
+.bg__item-movie:hover {
+  transform: translateY(-20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
+}
+
 .bg__item-ps5 {
   background-image: url("../img/ps5.jpg");
 }
+
+.bg__item-ps5:hover {
+  transform: translateX(-40px) translateY(-20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
+}
+
 .bg__item-vr {
   background-image: url("../img/vr.jpg");
+}
+
+.bg__item-vr:hover {
+  transform: translateX(40px) translateY(20px) translateZ(10px);
+  border: solid 2px rgba(245, 241, 241, 0.763);
 }

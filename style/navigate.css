@@ -1,5 +1,6 @@
 .header {
   padding-top: 30px;
+  transition-duration: 1s;
 }
 .header__flex-wrapper {
   display: flex;
@@ -20,6 +21,8 @@
 .navigation__link {
   line-height: 227%;
   text-transform: uppercase;
+  transition-duration: 0.4s;
+  transition-property: color;
 }
 
 .navigation__button-call {
@@ -30,17 +33,19 @@
   height: 55px;
   text-transform: uppercase;
   color: #fff;
+  transition-duration: 0.4s;
+  transition-property: background-color, border;
 }
 
 .navigation__button-call:hover,
 .navigation__button-call:focus {
   border: 3px solid #6c0287;
-  background: #6c0287;
+  background-color: #6c0287;
 }
 
 .navigation__button-call:active {
   border: 1px solid #000;
-  background: #640aa3;
+  background-color: #640aa3;
 }
 
 .navigation__link:hover,
@@ -54,13 +59,15 @@
 
 .header__link {
   display: inline;
+  transition-duration: 0.5s;
+  transition-property: background-color;
 }
 
 .header__link:hover,
 .header__link:focus {
-  background: #cd06ff;
+  background-color: #cd06ff;
 }
 
 .header__link:active {
-  background: #640aa3;
+  background-color: #640aa3;
 }

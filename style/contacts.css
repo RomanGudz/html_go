@@ -29,6 +29,8 @@
   display: flex;
   align-items: center;
   gap: 28px;
+  transition-duration: 0.6s;
+  transition-property: color, outline;
 }
 
 .location {
@@ -62,6 +64,8 @@
 
 .contact__link-social {
   color: #fff;
+  transition-duration: 0.6s;
+  transition-property: color, outline;
 }
 
 .contact__link-social:hover {

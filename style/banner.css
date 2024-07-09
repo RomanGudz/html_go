@@ -87,6 +87,8 @@
   padding: 24px 68px;
   align-self: flex-start;
   position: relative;
+  transition-duration: 0.5s;
+  transition-property: background-color;
 }
 
 .banner__button-booking:hover,
@@ -105,6 +107,8 @@
   background-position: right;
   z-index: 1;
   margin-left: 539px;
+  transition-duration: 0.5s;
+  transition-property: background-image;
 }
 
 .banner__link-down:hover {
