@@ -4,7 +4,6 @@
 }
 .header__flex-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .navigation {
@@ -15,11 +14,13 @@
 .navigation__list {
   display: flex;
   justify-content: space-around;
+  align-self: center;
   gap: 40px;
+  font-size: 22px;
+  line-height: 227%;
 }
 
 .navigation__link {
-  line-height: 227%;
   text-transform: uppercase;
   transition-duration: 0.4s;
   transition-property: color;
@@ -27,9 +28,12 @@
 
 .navigation__button-call {
   border: 3px solid var(--color-ruby);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 136%;
   border-radius: 10px;
   background: #1b1a1b;
-  width: 280px;
+  max-width: 280px;
   height: 55px;
   text-transform: uppercase;
   color: #fff;
@@ -58,7 +62,6 @@
 }
 
 .header__link {
-  display: inline;
   transition-duration: 0.5s;
   transition-property: background-color;
 }
@@ -70,4 +73,71 @@
 
 .header__link:active {
   background-color: #640aa3;
+}
+
+.header__button-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header__link {
+    width: 87px;
+    height: 55px;
+  }
+
+  .navigation {
+    gap: 79px;
+  }
+
+  .navigation__list {
+    gap: 20px;
+    font-size: 18px;
+    line-height: 122%;
+  }
+
+  .navigation__button-call {
+    font-size: 18px;
+    line-height: 133%;
+    border-radius: 8px;
+    padding: 11px 26px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .header__button-menu {
+    align-self: center;
+    display: block;
+    background-color: #1b1a1b;
+    border: none;
+    color: #6c0287;
+    width: 54px;
+    height: 29px;
+    transition: color 0.3s ease;
+  }
+
+  .header__button-menu:hover {
+    color: #cd06ff;
+  }
+
+  .header__button-menu:focus,
+  .header__button-menu:active {
+    color: #840aa3;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .header__link {
+    width: 66px;
+    height: 42px;
+  }
+  .header__button-menu {
+    width: 39px;
+    height: 20px;
+  }
 }

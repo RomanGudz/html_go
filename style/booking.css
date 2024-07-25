@@ -15,7 +15,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  width: 980px;
 }
 
 .fieldset-halls {
@@ -35,10 +34,6 @@
 .margin-bottom {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.margin-bottom:last-of-type {
-  margin-bottom: 38px;
 }
 
 .booking__form-label-halls {
@@ -112,11 +107,10 @@
 }
 
 .booking__form-fieldset-booking-date {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 14px 36px;
-  flex-wrap: wrap;
-  align-self: stretch;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -126,11 +120,34 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
+  max-width: 300px;
+}
+
+.booking__form-label-booking-date:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.booking__form-label-booking-date:nth-child(4) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.booking__form-label-booking-date:nth-child(5) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.booking__form-label-booking-date:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.booking__form-label-booking-date:nth-child(7) {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .booking__form-input-booking-date {
-  flex-basis: 52px;
-  width: 300px;
+  height: 52px;
 }
 
 .booking__form-input-booking-date:focus {
@@ -138,10 +155,12 @@
 }
 
 .small-input {
-  width: 134px;
+  max-width: 134px;
 }
 
 .booking__form-date-wrapper {
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   gap: 30px;
   flex-basis: 52px;
@@ -152,10 +171,11 @@
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
+  border: none;
+  box-shadow: 0px 0px #fff, 0 0 20px #fff;
   color: var(--main-color);
   padding: 16px 50px;
   align-self: flex-end;
-  border: 3px solid var(--main-color);
   transition-duration: 0.5s;
   transition-property: background-color, border, border-radius;
 }
@@ -174,4 +194,223 @@
   border-radius: 10px;
   border: 3px solid #eadeed;
   background-color: #eadeed;
+}
+
+@media (max-width: 1024px) {
+  .booking__wrapper-bg {
+    padding: 57px 0 63px;
+  }
+
+  .booking__h3 {
+    font-size: 30px;
+    line-height: 133%;
+  }
+  .booking__form {
+    padding-top: 25px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 26px;
+  }
+
+  .fieldset-halls {
+    gap: 61px;
+    margin-bottom: 60px;
+  }
+
+  .booking__form-label-halls {
+    border-radius: 6px;
+    max-width: 180px;
+    max-height: 44px;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .fieldset-entertainment-set {
+    margin-bottom: 67px;
+  }
+  .booking__form-fieldset-booking-date {
+    gap: 14px 50px;
+    margin-bottom: 50px;
+  }
+  .booking__form-button {
+    font-size: 18px;
+    line-height: 133%;
+    padding: 13px 46px;
+  }
+}
+@media (max-width: 768px) {
+  .booking__wrapper-bg {
+    padding: 50px 0;
+  }
+  .booking__form {
+    padding-top: 40px;
+  }
+  .booking__h3 {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  .fieldset-halls {
+    gap: 29px;
+    margin-bottom: 50px;
+  }
+
+  .booking__form-label-halls {
+    border-radius: 6px;
+    max-width: 150px;
+    max-height: 38px;
+    padding: 9px 0;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .fieldset-entertainment-set {
+    margin-bottom: 50px;
+    gap: 66px;
+    flex-wrap: wrap;
+  }
+
+  .booking__form-fieldset-booking-date {
+    grid-template-columns: minmax(180px, 280px) minmax(200px, 300px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 14px 106px;
+    margin-bottom: 48px;
+  }
+  .booking__form-label-booking-date {
+    max-width: 100%;
+  }
+
+  .booking__form-label-booking-date:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .booking__form-label-booking-date:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .booking__form-label-booking-date:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .booking__form-label-booking-date:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .booking__form-label-booking-date:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .booking__form-date-wrapper {
+    gap: 14px;
+  }
+
+  .booking__form-button {
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 127%;
+    padding: 16px 50px;
+  }
+}
+@media (max-width: 480px) {
+  .booking__wrapper-bg {
+    padding: 30px 0;
+  }
+
+  .booking__form {
+    padding-top: 13px;
+  }
+
+  .booking__h3 {
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  .margin-bottom {
+    margin-bottom: 15px;
+  }
+  .booking__form-legend {
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .fieldset-halls {
+    gap: 14px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .booking__form-label-halls {
+    border-radius: 4px;
+    max-width: 130px;
+    max-height: 30px;
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .fieldset-entertainment-set {
+    margin-bottom: 30px;
+    gap: 25px 40px;
+  }
+
+  .booking__form-fieldset-entertainment {
+    gap: 15px;
+  }
+
+  .booking__form-label-entertainment {
+    font-size: 16px;
+  }
+
+  .booking__form-fieldset-booking-date {
+    grid-template-columns: minmax(180px, 280px);
+    grid-template-rows: repeat(7, min-content);
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .booking__form-date-wrapper {
+    gap: 12px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .booking__form-label-booking-date:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .booking__form-label-booking-date:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .booking__form-label-booking-date:nth-child(5) {
+    margin-bottom: 20px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .booking__form-label-booking-date:nth-child(6) {
+    margin-bottom: 20px;
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .booking__form-label-booking-date:nth-child(7) {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
+  .booking__form-button {
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 144%;
+    padding: 17px 58px;
+  }
 }

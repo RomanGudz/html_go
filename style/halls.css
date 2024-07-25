@@ -7,7 +7,8 @@
   font-size: 40px;
   line-height: 125%;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .halls__list {
   display: flex;
@@ -17,13 +18,15 @@
 .halls__item-link {
   text-decoration: none;
   background-size: cover;
+  background-repeat: no-repeat;
   display: block;
-  width: 580px;
-  height: 349px;
+  max-width: 100%;
+  max-height: 349px;
   padding: 94px 164px;
 }
 
 .halls__item {
+  flex: 1 1 calc(50% - 20px);
   text-align: center;
   font-size: 70px;
   line-height: 114%;
@@ -40,4 +43,70 @@
 }
 .halls__item--bg-neon-style {
   background-image: url("../img/neon_style.jpg");
+}
+
+@media (max-width: 1024px) {
+  .halls__title {
+    font-size: 30px;
+    line-height: 133%;
+    margin-bottom: 36px;
+  }
+  .halls__list {
+    flex: content;
+    gap: 20px;
+  }
+  .halls__item-link {
+    background-size: contain;
+    max-width: 443px;
+    max-height: 267px;
+    padding: 73px 95px;
+  }
+
+  .halls__item {
+    flex: 1 1 calc(50% - 20px);
+    font-size: 50px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .halls__title {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 35px;
+  }
+  .halls__list {
+    gap: 20px;
+  }
+  .halls__item-link {
+    max-width: 100%;
+    height: 200px;
+    padding: 61px 102px;
+  }
+
+  .halls__item {
+    flex: 1 1 calc(50% - 20px);
+    font-size: 40px;
+    line-height: 125%;
+  }
+}
+@media (max-width: 480px) {
+  .halls__title {
+    font-size: 14px;
+    line-height: 129%;
+    margin-bottom: 15px;
+  }
+  .halls__list {
+    gap: 10px;
+  }
+  .halls__item-link {
+    max-width: 100%;
+    height: 168px;
+    padding: 50px 100px;
+  }
+
+  .halls__item {
+    flex: 1 1 calc(50% - 10px);
+    font-size: 26px;
+    line-height: 131%;
+  }
 }
