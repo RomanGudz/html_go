@@ -99,7 +99,10 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.contacts__wrapper-a,
 .contacts__wrapper-p {
+  font-weight: 400;
   font-size: 14px;
   line-height: 114%;
   white-space: pre-line;
@@ -249,6 +252,7 @@
     align-items: center;
   }
 
+  .contacts__wrapper-a,
   .contacts__wrapper-p {
     font-size: 12px;
     line-height: 133%;
@@ -256,7 +260,7 @@
     text-align: center;
   }
 
-  .contacts__wrapper-p:first-of-type {
+  .contacts__wrapper-p {
     margin-bottom: 19px;
   }
 }

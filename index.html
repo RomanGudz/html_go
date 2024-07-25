@@ -15,7 +15,7 @@
   <header class="header">
     <div class="container header__flex-wrapper">
       <button class="header__button-menu">
-        <svg width="54" height="29" viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <rect width="54" height="5" rx="2" />
           <rect y="12" width="54" height="5" rx="2" />
           <rect y="24" width="31" height="5" rx="2" />
@@ -112,20 +112,19 @@
             class="booking__form">
             <fieldset class="booking__form-fieldset  fieldset-halls">
               <legend class="booking__form-legend margin-bottom">Выбери зал</legend>
-              <label class="booking__form-label-halls">
-                <input type="radio" name="halls" value="80`sVibes" class="booking__form-input-halls">
-                80`s vibes</label>
-              <label class="booking__form-label-halls">
-                <input type="radio" name="halls" value="StarWars" class="booking__form-input-halls">
-                Star wars</label>
-              <label class="booking__form-label-halls">
-                <input type="radio" name="halls" value="WildWest" class="booking__form-input-halls">
-                Wild west
-              </label>
-              <label class="booking__form-label-halls">
-                <input type="radio" name="halls" value="NeonStyle" class="booking__form-input-halls">
-                Neon style
-              </label>
+
+              <input id="80sVibes" type="radio" name="halls" value="80sVibes" class="booking__form-input-halls">
+              <label class="booking__form-label-halls" for="80sVibes">80`s vibes</label>
+
+              <input id="StarWars" type="radio" name="halls" value="StarWars" class="booking__form-input-halls">
+              <label class="booking__form-label-halls" for="StarWars">Star wars</label>
+
+              <input id="WildWest" type="radio" name="halls" value="WildWest" class="booking__form-input-halls">
+              <label class="booking__form-label-halls" for="WildWest">Wild west</label>
+
+              <input id="NeonStyle" type="radio" name="halls" value="NeonStyle" class="booking__form-input-halls">
+              <label class="booking__form-label-halls" for="NeonStyle">Neon style</label>
+
             </fieldset>
 
             <fieldset class="fieldset-entertainment-set">
@@ -405,9 +404,9 @@
         </ul>
         <div class="contacts__wrapper">
           <p class="contacts__wrapper-p">© Game Over, 2022</p>
-          <p class="contacts__wrapper-p">Design by Anastasia Ilina
+          <a class="contacts__wrapper-a">Design by Anastasia Ilina
             ilina9825@gmail.com
-          </p>
+          </a>
         </div>
 
       </div>

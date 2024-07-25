@@ -23,6 +23,12 @@
   max-width: 100%;
   max-height: 349px;
   padding: 94px 164px;
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+
+.halls__item-link:hover {
+  color: #cd06ff;
 }
 
 .halls__item {

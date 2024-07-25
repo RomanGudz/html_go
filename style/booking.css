@@ -55,6 +55,7 @@
 
 .booking__form-label-halls:hover {
   background-color: #eadeed;
+  border: 3px solid #640aa3;
 }
 
 .booking__form-label-halls:focus {
@@ -70,6 +71,13 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
+  transition-duration: 0.5s;
+  transition-property: background-color, border;
+}
+
+.booking__form-input-halls:checked + .booking__form-label-halls {
+  border: 3px solid #fff;
+  background-color: var(--main-color);
 }
 
 .fieldset-entertainment-set {
@@ -90,6 +98,9 @@
 .booking__form-label-entertainment {
   font-size: 22px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .booking__form-label-entertainment:first-of-type {
@@ -117,6 +128,7 @@
 .booking__form-label-booking-date {
   display: flex;
   flex-direction: column;
+  gap: 6px;
   font-weight: 700;
   font-size: 14px;
   line-height: 114%;
@@ -155,7 +167,7 @@
 }
 
 .small-input {
-  max-width: 134px;
+  width: 134px;
 }
 
 .booking__form-date-wrapper {
@@ -165,34 +177,35 @@
   gap: 30px;
   flex-basis: 52px;
 }
+
 .booking__form-button {
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  border: none;
+  border: 3px solid transparent;
   box-shadow: 0px 0px #fff, 0 0 20px #fff;
   color: var(--main-color);
   padding: 16px 50px;
   align-self: flex-end;
+  margin-right: 105px;
   transition-duration: 0.5s;
-  transition-property: background-color, border, border-radius;
+  transition-property: background-color, border-color;
 }
 
 .booking__form-button:hover {
-  border: 3px solid var(--main-color);
+  border-color: var(--main-color);
   background-color: #eadeed;
 }
 
 .booking__form-button:focus {
-  border: 3px solid var(--main-color);
+  border-color: var(--main-color);
   background-color: #fff;
 }
 
 .booking__form-button:active {
-  border-radius: 10px;
-  border: 3px solid #eadeed;
+  border-color: #eadeed;
   background-color: #eadeed;
 }
 
@@ -238,6 +251,7 @@
     font-size: 18px;
     line-height: 133%;
     padding: 13px 46px;
+    margin-right: 0;
   }
 }
 @media (max-width: 768px) {
@@ -274,6 +288,10 @@
     margin-bottom: 50px;
     gap: 66px;
     flex-wrap: wrap;
+  }
+
+  .booking__form-label-entertainment {
+    gap: 20px;
   }
 
   .booking__form-fieldset-booking-date {

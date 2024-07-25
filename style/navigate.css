@@ -33,8 +33,9 @@
   line-height: 136%;
   border-radius: 10px;
   background: #1b1a1b;
-  max-width: 280px;
+
   height: 55px;
+  padding: 0 32px;
   text-transform: uppercase;
   color: #fff;
   transition-duration: 0.4s;
