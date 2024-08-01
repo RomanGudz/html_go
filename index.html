@@ -7,24 +7,30 @@
   <link rel="icon" type="image/svg+xml" href="./img/icon.svg">
   <link rel="icon" type="image/png" href="./img/logo.png">
   <link rel="stylesheet" href="./style/index.css">
+  <script defer src="./js/jquery-3.7.1.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
   <title>GO</title>
 
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header__flex-wrapper">
+  <header class="header overlay">
+    <div class="container header__flex-wrapper  ">
       <button class="header__button-menu">
-        <svg viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="header__button-menu-svg">
           <rect width="54" height="5" rx="2" />
           <rect y="12" width="54" height="5" rx="2" />
           <rect y="24" width="31" height="5" rx="2" />
+        </svg>
+        <svg viewBox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="header__button-menu-svg">
+          <rect y="38.1838" width="54" height="5" rx="2" transform="rotate(-45 0 38.1838)" fill="#6C0287" />
+          <rect x="3.53564" width="54" height="5" rx="2" transform="rotate(45 3.53564 0)" fill="#6C0287" />
         </svg>
       </button>
       <a href="#" class="header__link">
         <img src="./img/logo.png" alt="Логотип компании" class="header__logo">
       </a>
-      <nav class="navigation visually-hidden-480px">
+      <nav class="navigation visually-hidden-480px ">
         <ul class="navigation__list visually-hidden-768px">
           <li class="navigation__item">
             <a href="#halls" class="navigation__link">Залы</a>
@@ -41,9 +47,10 @@
           <li class="navigation__item">
             <a href="#contacts" class="navigation__link">Контакты</a>
           </li>
+          <button class="navigation__button-call visually-hidden" type="button">заказать звонок</button>
         </ul>
-        <button class="navigation__button-call " type="button">заказать звонок</button>
       </nav>
+      <button class="navigation__button-call visually-hidden-480px" type="button">заказать звонок</button>
     </div>
   </header>
 
@@ -412,6 +419,31 @@
       </div>
     </section>
   </footer>
+
+  <div class="modal-overlay">
+    <div class="modal ">
+      <button class="modal__btn-close">
+        <svg viewBox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" fill="white" />
+          <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" fill="white" />
+        </svg></button>
+
+      <h3 class="modal__title">Заказать звонок</h3>
+
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="modal__form">
+        <label for="name" class="modal__form-label">Имя
+          <input type="text" name="name" required class="modal__form-input">
+        </label>
+
+        <label for="phone" class="modal__form-label">Телефон
+          <input type="tel" name="phone" required inputmode="tel" placeholder="+7(___)-___-__-__"
+            class="modal__form-input">
+        </label>
+
+        <button type="submit" class="modal__form-button">Позвонить мне</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
