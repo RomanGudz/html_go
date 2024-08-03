@@ -8,14 +8,15 @@
   display: grid;
   grid-template-columns: 440px 1fr;
   grid-template-rows: repeat(4, min-content);
-  gap: 40px;
+  row-gap: 40px;
 }
 
-.contact__img-map {
+.contact__map {
   grid-column: 2/3;
   grid-row: 2/5;
   justify-self: flex-end;
-  object-fit: cover;
+  width: 100%;
+  height: 274px;
 }
 
 .contacts__title {
@@ -112,10 +113,10 @@
   .grid-footer {
     grid-template-columns: 305px 1fr;
     grid-template-rows: repeat(4, min-content);
-    gap: 26px;
+    row-gap: 26px;
   }
 
-  .contact__img-map {
+  .contact__map {
     grid-column: 2/3;
     grid-row: 2/5;
     justify-self: flex-end;
@@ -162,7 +163,7 @@
   .grid-footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, min-content);
-    gap: 30px;
+    row-gap: 30px;
   }
 
   .contacts__title {
@@ -170,10 +171,11 @@
     line-height: 150%;
   }
 
-  .contact__img-map {
+  .contact__map {
     grid-column: 1/2;
     grid-row: 4/5;
     justify-self: stretch;
+    height: 337px;
   }
 
   .contacts__list {
@@ -209,7 +211,7 @@
   }
 
   .grid-footer {
-    gap: 10px;
+    row-gap: 10px;
     font-size: 14px;
     line-height: 129%;
   }
@@ -233,7 +235,8 @@
     margin-bottom: 10px;
   }
 
-  .contact__img-map {
+  .contact__map {
+    height: 194px;
     padding-top: 25px;
   }
 

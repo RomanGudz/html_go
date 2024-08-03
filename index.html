@@ -8,13 +8,16 @@
   <link rel="icon" type="image/png" href="./img/logo.png">
   <link rel="stylesheet" href="./style/index.css">
   <script defer src="./js/jquery-3.7.1.min.js"></script>
+  <script defer src="./js/jquery-ui.min.js"></script>
   <script type="module" src="./js/index.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1?apikey=64fb0585-18de-4e54-94f4-784dc3e91268&lang=ru-RU"
+    type="text/javascript"></script>
   <title>GO</title>
 
 </head>
 
 <body>
-  <header class="header overlay">
+  <header class="header">
     <div class="container header__flex-wrapper  ">
       <button class="header__button-menu">
         <svg viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="header__button-menu-svg">
@@ -311,12 +314,52 @@
       <div class="container">
         <h2 class="faq__title">Частые вопросы</h2>
 
-        <ul class="faq__list">
-          <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq__item">Могут ли вернуть деньги за бронь?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
-          <li class="faq__item">Как получить VIP карту?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
+        <ul class="faq__list accordoin">
+          <li class="faq__item">
+            <h3 class="faq__item-h3-btn " data-icon-color="white">
+              <span class="faq__item-h3-span">Можно ли забронировать комнату онлайн?</span>
+            </h3>
+            <p class="faq__item-p">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы
+              можете забронировать
+              комнату
+              позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-h3-btn">
+              <span class="faq__item-h3-span">Могут ли вернуть деньги за бронь?</span>
+            </h3>
+            <p class="faq__item-p">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы
+              можете забронировать
+              комнату
+              позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-h3-btn " data-icon-color="white">
+              <span class="faq__item-h3-span">Какая комната самая популярная?</span>
+            </h3>
+            <p class="faq__item-p">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы
+              можете забронировать
+              комнату
+              позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-h3-btn">
+              <span class="faq__item-h3-span">Как получить VIP карту?</span>
+            </h3>
+            <p class="faq__item-p">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы
+              можете забронировать
+              комнату
+              позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__item-h3-btn " data-icon-color="white">
+              <span class="faq__item-h3-span">Какая комната самая популярная?</span>
+            </h3>
+            <p class="faq__item-p">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы
+              можете забронировать
+              комнату
+              позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+          </li>
         </ul>
       </div>
     </section>
@@ -327,7 +370,7 @@
       <div class="container grid-footer">
 
         <h3 class="contacts__title">Контакты</h3>
-        <img src="./img/map.jpg" alt="" class="contact__img-map">
+        <div id="map" class="contact__map"></div>
         <ul class="contacts__list">
           <li class="contact__item location">
             <svg class="contact__item-svg" width="35" height="32" viewBox="0 0 35 32" fill="currentColor"
