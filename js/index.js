@@ -15,12 +15,17 @@ new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews__swiper-button-next',
+    prevEl: '.reviews__swiper-button-prev',
   },
+  containerModifierClass: 'swiper-wrapper',
+  on: {
+    init: function () {
+      this.slides.forEach(slide => {
+        slide.style.display = "flex"
+      });
+      this.wrapperEl.className = 'reviews__list';
+    },
+  }
 });

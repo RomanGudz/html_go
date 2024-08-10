@@ -32,6 +32,7 @@ h3.forEach(elem => {
   span.addEventListener('click', (e) => {
     e.target.classList.toggle('acc__icon-white-active');
     if (!colorIcon) {
+
       e.target.classList.toggle('acc__icon-active');
       e.target.classList.toggle('acc__icon-white-active');
     }

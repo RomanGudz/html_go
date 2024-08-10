@@ -109,24 +109,24 @@ validateFormBooking.addRequiredGroup('#booking-halls',
       lastName: target.lastName.value,
       email: target.email.value,
     };
-    // $.ajax({
-    //   "url": 'https://postman-echo.com/post',
-    //   "method": 'post',
-    //   "dataType": 'json',
-    //   "data": JSON.stringify(data),
-    //   success: function (data) {
-    //     console.log(data);
-    //   },
-    //   error: function (exception) {
-    //     console.log('exception: ', exception);
+    $.ajax({
+      "url": 'https://postman-echo.com/post',
+      "method": 'post',
+      "dataType": 'json',
+      "data": JSON.stringify(data),
+      success: function (data) {
+        console.log(data);
+      },
+      error: function (exception) {
+        console.log('exception: ', exception);
 
-    //   }
-    // });
-    axios.post('https://jsonplaceholder.typicode.com/posts', data)
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+      }
+    });
+    // axios.post('https://jsonplaceholder.typicode.com/posts', data)
+    //   .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
   });

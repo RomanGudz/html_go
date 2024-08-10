@@ -7,9 +7,6 @@
 }
 .reviews__list {
   display: flex;
-  flex-direction: column;
-  padding: 0 100px;
-  gap: 50px;
 }
 
 .reviews__item {
@@ -17,6 +14,7 @@
   flex-direction: row;
   align-items: start;
   gap: 20px;
+  padding: 0 100px;
 }
 
 .reviews__item-figure {
@@ -51,6 +49,33 @@
   padding-top: 52px;
 }
 
+.reviews__swiper-button-prev,
+.reviews__swiper-button-next {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: calc(50% - 15px);
+  background-color: #1b1a1b;
+  border: none;
+  display: flex;
+  z-index: 10;
+  display: flex;
+}
+
+.reviews__swiper-button-prev {
+  left: 0;
+}
+
+.reviews__swiper-button-next {
+  right: 0;
+}
+
+.arow {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .reviews__title {
     font-size: 30px;
@@ -58,10 +83,10 @@
     margin-bottom: 26px;
   }
 
-  .reviews__list {
+  /* .reviews__list {
     padding: 0 79px 0 100px;
     gap: 40px;
-  }
+  } */
   .reviews__item-figure-figcaption,
   .reviews__block {
     line-height: 144%;
@@ -74,6 +99,7 @@
 
   .reviews__item {
     gap: 38px;
+    padding: 0 79px 0 100px;
   }
 
   .reviews__item-figure::before {
@@ -84,6 +110,13 @@
   .reviews__item-figure-img {
     max-width: 172px;
   }
+
+  .reviews__swiper-button-prev,
+  .reviews__swiper-button-next {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+  }
 }
 @media (max-width: 768px) {
   .reviews__title {
@@ -92,10 +125,16 @@
     margin-bottom: 31px;
   }
 
-  .reviews__list {
+  /* .reviews__list {
     padding: 0 64px;
     gap: 30px;
+  } */
+
+  .reviews__item {
+    gap: 15px;
+    padding: 0 63px;
   }
+
   .reviews__block {
     line-height: 137%;
     font-size: 16px;
@@ -130,9 +169,14 @@
     margin-bottom: 15px;
   }
 
-  .reviews__list {
+  /* .reviews__list {
     padding: 0;
     gap: 20px;
+  } */
+
+  .reviews__item {
+    gap: 15px;
+    padding: 0;
   }
   .reviews__block {
     line-height: 133%;
@@ -157,5 +201,21 @@
 
   .reviews__item-figure-img {
     max-width: 86px;
+  }
+
+  .reviews__swiper-button-prev,
+  .reviews__swiper-button-next {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 80px);
+  }
+
+  .reviews__swiper-button-prev {
+    left: 30px;
+  }
+
+  .reviews__swiper-button-next {
+    right: 30px;
   }
 }
