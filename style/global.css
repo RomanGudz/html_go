@@ -107,6 +107,15 @@ section:first-of-type {
 Чтобы контент не прижимался к краям экрана
 */
 
+/* .wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 145px;
+  z-index: 2;
+  background-color: #440f51;
+} */
+
 .container {
   max-width: 1440px;
   padding: 0 130px;
