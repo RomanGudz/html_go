@@ -75,6 +75,8 @@
 
 .contact__link-social {
   color: #fff;
+  display: block;
+  height: 50px;
   transition-duration: 0.6s;
   transition-property: color, outline;
 }
@@ -99,6 +101,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.contact__item-social-svg {
+  width: 50px;
+  height: 50px;
 }
 
 .contacts__wrapper-a,
@@ -134,12 +141,17 @@
 
   .contacts__list-social {
     display: flex;
+
     gap: 26px;
     padding-top: 14px;
   }
 
   .contact__item {
     gap: 13px;
+  }
+
+  .contact__link-social {
+    height: 40px;
   }
 
   .contact__item-social-svg {
@@ -238,6 +250,10 @@
   .contact__map {
     height: 194px;
     padding-top: 25px;
+  }
+
+  .contact__link-social {
+    height: 30px;
   }
 
   .contact__item-social-svg {

@@ -66,7 +66,9 @@
 }
 
 .acc__icon:hover,
-.acc__icon:active {
+.acc__icon:active,
+.faq__item-h3-btn:hover .acc__icon,
+.faq__item-h3-btn:active .acc__icon {
   background-image: url("../img/open-hover.svg");
 }
 
@@ -93,7 +95,9 @@
 }
 
 .acc__icon-white:hover,
-.acc__icon-white:active {
+.acc__icon-white:active,
+.faq__item-h3-btn:hover .acc__icon-white,
+.faq__item-h3-btn:active .acc__icon-white {
   background-image: url("../img/open-purple-hover.svg");
 }
 

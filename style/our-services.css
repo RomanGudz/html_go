@@ -111,6 +111,7 @@
     padding-top: 132px;
     padding-left: 30px;
     background-size: cover;
+    /* box-sizing: border-box; */
   }
 
   .bg__item-audio {
@@ -168,6 +169,13 @@
     z-index: 1;
     transform: translateX(40px) translateY(20px) translateZ(10px);
     border: solid 2px rgba(245, 241, 241, 0.763);
+  }
+}
+
+@media (max-width: 680px) {
+  .our-services__list-img-item {
+    padding-top: 80px;
+    padding-left: 15px;
   }
 }
 @media (max-width: 480px) {
