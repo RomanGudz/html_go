@@ -29,12 +29,32 @@ h3.forEach(elem => {
     }
   });
 
+  elem.addEventListener('mouseover', () => {
+    if (window.matchMedia('(hover: hover)').matches) {
+      span.classList.toggle('acc__icon-hover')
+      if (colorIcon) {
+        span.classList.toggle('acc__icon-hover');
+        span.classList.toggle('acc__icon-white-hover')
+      }
+    }
+  });
+
+  elem.addEventListener('mouseout', () => {
+    if (window.matchMedia('(hover: hover)').matches) {
+      span.classList.toggle('acc__icon-hover')
+      if (colorIcon) {
+        span.classList.toggle('acc__icon-hover');
+        span.classList.toggle('acc__icon-white-hover')
+      }
+    }
+  });
+
   span.addEventListener('click', (e) => {
     e.target.classList.toggle('acc__icon-white-active');
     if (!colorIcon) {
-
       e.target.classList.toggle('acc__icon-active');
       e.target.classList.toggle('acc__icon-white-active');
     }
   })
 });
+
